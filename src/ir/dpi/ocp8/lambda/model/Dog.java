@@ -1,4 +1,4 @@
-package ir.dpi.ocp.lambda.functionalInterface;
+package ir.dpi.ocp8.lambda.model;
 
 /**
  * Author: <a href="mailto:k1.tehrani@gmail.com">Kayvan Tehrani</a>
@@ -39,5 +39,9 @@ public class Dog {
 
   public void setWeight(int weight) {
     this.weight = weight;
+  }
+
+  public void bark() {
+    System.out.println("Woof!");
   }
 }
