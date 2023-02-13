@@ -8,10 +8,10 @@ import java.util.stream.Stream;
 
 public class TerminalOperators {
     public static void main(String[] args) {
-//        testForEach();
-//        testMin();
-//        testAllMatch();
-//        testCollect();
+        testForEach();
+        testMin();
+        testAllMatch();
+        testCollect();
         testReduce();
     }
 
