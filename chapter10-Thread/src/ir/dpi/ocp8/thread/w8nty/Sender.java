@@ -27,6 +27,7 @@ public class Sender implements Runnable {
     };
 
     for (String packet : packets) {
+      System.out.println("sending packet = " + packet);
       data.send(packet);
 
       // Thread.sleep() to mimic heavy server-side processing

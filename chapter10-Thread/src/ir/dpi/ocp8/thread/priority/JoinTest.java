@@ -10,6 +10,8 @@ import ir.dpi.ocp8.thread.states.SleepSample;
 public class JoinTest {
 
   public static void main(String[] args) {
+    long startTime = System.currentTimeMillis();
+
     SleepSample sleepSample = new SleepSample();
     Thread thread = new Thread(sleepSample);
     thread.start();
@@ -18,6 +20,9 @@ public class JoinTest {
     } catch (InterruptedException e) {
       e.printStackTrace();
     }
+    long stopTime = System.currentTimeMillis();
+    long elapsedTime = stopTime - startTime;
+    System.out.println(elapsedTime);
 
   }
 

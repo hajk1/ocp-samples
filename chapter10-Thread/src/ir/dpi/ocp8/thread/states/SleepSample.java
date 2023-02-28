@@ -23,12 +23,12 @@ public class SleepSample implements Runnable {
   @Override
   public void run() {
     for (int i = 0; i < 4; i++) {
-      System.out.println("Run by :" + Thread.currentThread().getName());
+      System.out.println("Run by :" + Thread.currentThread().getName()+i);
     }
     try {
-      Thread.sleep(1000);
+      Thread.sleep(3000);
     } catch (InterruptedException ex) {
-      System.out.println("interuped!");
+      System.out.println("interrupted!");
     }
   }
 }

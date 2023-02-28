@@ -25,6 +25,7 @@ public class Data {
     transfer = false;
 
     this.packet = packet;
+    System.out.println("sent packet finished= " + packet);
     notifyAll();
   }
 
@@ -38,7 +39,7 @@ public class Data {
       }
     }
     transfer = true;
-
+    System.out.println("packet receive finished= " + packet);
     notifyAll();
     return packet;
   }

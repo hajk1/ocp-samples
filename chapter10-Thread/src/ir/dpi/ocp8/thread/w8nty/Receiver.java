@@ -18,11 +18,9 @@ public class Receiver implements Runnable {
   // standard constructors
 
   public void run() {
-    for (String receivedMessage = load.receive();
-        !"End".equals(receivedMessage);
-        receivedMessage = load.receive()) {
+    for (String receivedMessage = load.receive(); !"End".equals(receivedMessage); receivedMessage = load.receive()) {
 
-      System.out.println(receivedMessage);
+      System.out.println("packet received: "+receivedMessage);
 
       // ...
       try {
